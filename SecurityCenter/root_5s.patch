@@ -1,0 +1,32 @@
+From 7ce3301ff29e2a114e6888009318d0c58a00d9cd Mon Sep 17 00:00:00 2001
+From: X-s <xsmumu@gmail.com>
+Date: Wed, 29 Apr 2015 16:05:27 +0800
+Subject: [PATCH] 2
+
+---
+ SecurityCenter/smali/com/miui/permcenter/root/RootApplyActivity.smali | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+--- a/SecurityCenter/smali/com/miui/permcenter/root/RootApplyActivity.smali
++++ b/SecurityCenter/smali/com/miui/permcenter/root/RootApplyActivity.smali
+@@ -35,7 +35,7 @@
+ 
+     iput v0, p0, Lcom/miui/permcenter/root/RootApplyActivity;->mCurrentStep:I
+ 
+-    const/4 v0, 0x5
++    const/4 v0, 0x2
+ 
+     iput v0, p0, Lcom/miui/permcenter/root/RootApplyActivity;->mAutoNextStepTime:I
+ 
+@@ -300,7 +300,7 @@
+     .prologue
+     const/4 v6, 0x1
+ 
+-    const/4 v3, 0x5
++    const/4 v3, 0x1
+ 
+     const/4 v5, 0x0
+ 
+-- 
+1.9.1
+

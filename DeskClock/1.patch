@@ -1,0 +1,47 @@
+From 994c4fd4b22a2d97b7159eac913be4ee1f0f7504 Mon Sep 17 00:00:00 2001
+From: X-s <xsmumu@gmail.com>
+Date: Thu, 30 Apr 2015 22:14:23 +0800
+Subject: [PATCH] fix Deskclock display string error
+
+---
+ DeskClock/smali/com/android/deskclock/AlarmClockFragment.smali | 2 +-
+ DeskClock/smali/com/android/deskclock/TimerFragment.smali      | 2 +-
+ DeskClock/smali/com/android/deskclock/WorldClockFragment.smali | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+--- a/DeskClock/smali/com/android/deskclock/AlarmClockFragment.smali
++++ b/DeskClock/smali/com/android/deskclock/AlarmClockFragment.smali
+@@ -896,7 +896,7 @@
+ 
+     move-result-object v3
+ 
+-    const v4, 0x10403eb
++    sget v4, Lcom/android/internal/R$string;->delete:I
+ 
+     new-instance v5, Lcom/android/deskclock/AlarmClockFragment$5;
+ 
+--- a/DeskClock/smali/com/android/deskclock/TimerFragment.smali
++++ b/DeskClock/smali/com/android/deskclock/TimerFragment.smali
+@@ -1663,7 +1663,7 @@
+ 
+     move-result-object v4
+ 
+-    const v5, 0x10403eb
++    sget v5, Lcom/android/internal/R$string;->delete:I
+ 
+     new-instance v6, Lcom/android/deskclock/TimerFragment$7;
+ 
+--- a/DeskClock/smali/com/android/deskclock/WorldClockFragment.smali
++++ b/DeskClock/smali/com/android/deskclock/WorldClockFragment.smali
+@@ -425,7 +425,7 @@
+ 
+     move-result-object v3
+ 
+-    const v4, 0x10403eb
++    sget v4, Lcom/android/internal/R$string;->delete:I
+ 
+     new-instance v5, Lcom/android/deskclock/WorldClockFragment$1;
+ 
+-- 
+1.9.1
+
