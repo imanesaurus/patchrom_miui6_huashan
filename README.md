@@ -2,6 +2,7 @@
 Patchrom MIUI V6 For Sony Xperia SP based on Official CM11 (KTU84Q)
 
 Get started
+----------------
 
 To get started with MiCode/patchrom, you'll need to get familiar with Git and Repo.
 
@@ -22,6 +23,7 @@ After Repo sync do comman below, to get working patchrom miui for our devices fr
 $ git clone https://github.com/imanesaurus/patchrom_miui6_huashan huashan
 
 Build MIUI V6
+----------------
 
 use this command
 
