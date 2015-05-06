@@ -1,0 +1,472 @@
+===================================
+Since Sun Apr 26 19:04:40 UTC 2015
+===================================
+
+   * external/koush/Superuser
+a04c654 Automatic translation import
+
+   * bionic
+a989f04 bionic: Provide both mmap64 and K-compatible mmap
+87cfbd3 Add mmap64()
+
+   * bootable/recovery-cm
+720908e recovery: fix mismerge in block device memory mapping
+
+   * frameworks/base
+290a698 Automatic translation import
+
+   * hardware/qcom/fm
+1581c81 Automatic translation import
+
+   * packages/apps/Apollo
+22a1c04 Automatic translation import
+
+   * packages/apps/Browser
+405458c Automatic translation import
+
+   * packages/apps/CMAccount
+ccfe3cf Automatic translation import
+
+   * packages/apps/Contacts
+d11712c Automatic translation import
+
+   * packages/apps/ContactsCommon
+71ca912 Automatic translation import
+
+   * packages/apps/DeskClock
+d38ac8d Automatic translation import
+
+   * packages/apps/Gallery2
+500d82d Automatic translation import
+
+   * packages/apps/LockClock
+4443e1f Automatic translation import
+
+   * packages/apps/Mms
+1518b62 Automatic translation import
+
+   * packages/apps/Settings
+15efb5b Automatic translation import
+13ec45e Settings : Disable javascript for cm license
+74b891c Settings : Fix CMLicenseActivity
+f7f8191 Revert "Settings: use correct default value for backlight brightness"
+
+   * packages/apps/Stk
+a861c43 Automatic translation import
+
+   * packages/providers/DownloadProvider
+4ad9ea3 Automatic translation import
+
+   * system/core
+e46f4b4 libsparse: Use BIONIC implementation of mmap64()
+
+   * vendor/cm
+e4a1ee6 Vendor: Update Privacy policy URL
+
+===================================
+Since Sun Apr 12 07:07:58 UTC 2015
+===================================
+
+   * external/koush/Superuser
+c0506e2 Automatic translation import
+
+   * device/sony/huashan
+70761ad huashan: Increase volume
+
+   * external/stagefright-plugins
+db2951d mediatek: Always resample audio streams
+
+   * external/whispersystems/WhisperPush
+9237a31 Automatic translation import
+
+   * external/wpa_supplicant_8
+b9922ea P2P: Validate SSID element length before copying it
+
+   * external/wpa_supplicant_8_ti
+4ad3e29 P2P: Validate SSID element length before copying it
+
+   * frameworks/av
+289d8a8 OMXNodeInstance: Don't perform buffer alignment on mediatek hardware
+
+   * frameworks/base
+c925b69 Automatic translation import
+01f7e27 Automatic translation import
+3a0751a Fix set pattern screen after rotating the device 1/2
+
+   * hardware/qcom/fm
+604ae51 Automatic translation import
+4453fcc Automatic translation import
+
+   * kernel/sony/msm8x60
+fa63b77 msm:huashan: remove duplicated defconfig items
+
+   * packages/apps/Apollo
+fedab94 Automatic translation import
+1039bd0 Automatic translation import
+
+   * packages/apps/Bluetooth
+13926d1 Automatic translation import
+9f6f707 Automatic translation import
+
+   * packages/apps/BluetoothExt
+f32e468 Automatic translation import
+
+   * packages/apps/Browser
+a9ba102 Automatic translation import
+
+   * packages/apps/CMAccount
+c1b568f Automatic translation import
+a0ece45 Automatic translation import
+
+   * packages/apps/CMBugReport
+8612fce Automatic translation import
+
+   * packages/apps/CMFileManager
+29dda15 Automatic translation import
+
+   * packages/apps/CMHome
+ddd400c Automatic translation import
+
+   * packages/apps/CMUpdater
+308924f Automatic translation import
+
+   * packages/apps/CMWallpapers
+8ece6e7 Automatic translation import
+
+   * packages/apps/Calculator
+629eda2 Automatic translation import
+
+   * packages/apps/Calendar
+84c1901 Automatic translation import
+
+   * packages/apps/Camera2
+dae0620 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver
+d02ee61 CellBroadcastReceiver : Show alerts in FIFO order
+8ef4a3b Automatic translation import
+
+   * packages/apps/Contacts
+c42970d Automatic translation import
+0e6ac32 Automatic translation import
+9171b81 Improve contact copy string
+
+   * packages/apps/ContactsCommon
+af02d89 Automatic translation import
+61cb499 Automatic translation import
+
+   * packages/apps/DSPManager
+993e8bf Automatic translation import
+
+   * packages/apps/DeskClock
+69f5345 Automatic translation import
+
+   * packages/apps/Dialer
+822700b Automatic translation import
+176b6ab Split out textColor to its own separate value.
+
+   * packages/apps/Email
+d51d39f Automatic translation import
+1eec364 Automatic translation import
+
+   * packages/apps/Gallery2
+0824f2a Automatic translation import
+
+   * packages/apps/InCallUI
+740ea73 Automatic translation import
+
+   * packages/apps/LockClock
+26587ef Automatic translation import
+
+   * packages/apps/Mms
+0f6f460 Automatic translation import
+ef58c58 Automatic translation import
+5274131 Mms: fix quick popup unlock screen state management
+
+   * packages/apps/Settings
+5caca43 Automatic translation import
+8815ce0 Settings: use correct default value for backlight brightness
+257e1f9 Automatic translation import
+37c121d Fix set pattern screen after rotating the device 2/2
+b8edaf5 Expose values for notification icon in NotificationStation.
+
+   * packages/apps/SoundRecorder
+ff912d5 Automatic translation import
+
+   * packages/apps/Stk
+f936f91 Automatic translation import
+
+   * packages/apps/ThemeChooser
+85ed98b Automatic translation import
+
+   * packages/apps/Torch
+cb9cf5d Automatic translation import
+
+   * packages/apps/Trebuchet
+850bc41 Automatic translation import
+
+   * packages/apps/UnifiedEmail
+2100a14 Automatic translation import
+
+   * packages/apps/VoicePlus
+2563bca Automatic translation import
+
+   * packages/inputmethods/LatinIME
+263e57f Automatic translation import
+
+   * packages/providers/ContactsProvider
+4a1064e Automatic translation import
+
+   * packages/providers/DownloadProvider
+754b841 Automatic translation import
+
+   * packages/providers/ThemesProvider
+3559002 Automatic translation import
+
+   * packages/providers/UserDictionaryProvider
+1789604 Automatic translation import
+
+   * packages/services/Telephony
+5febacb Automatic translation import
+9b38b0c Automatic translation import
+
+   * packages/wallpapers/Galaxy4
+de00845 Automatic translation import
+
+   * packages/wallpapers/PhaseBeam
+f58b89a Automatic translation import
+
+   * packages/wallpapers/PhotoPhase
+cdf9ec0 strings: Fix translation error
+326afb0 Automatic translation import
+
+   * vendor/cm
+d7aa978 Updated Free Mobile APN
+30ac837 Add hipri to ATT Phone APN
+d248399 cm: add FreedomPop APN
+711552e APNs: Remove leading whitespace for a couple mmsc
+
+===================================
+Since Mon Apr  6 01:29:29 UTC 2015
+===================================
+
+   * external/koush/Superuser
+036a6f6 Automatic translation import
+
+   * frameworks/av
+0da00ae wipwip
+499f248 IAudioPolicyService: bound array size in queryDefaultPreProcessing
+
+   * frameworks/base
+c3656a6 AudioEffect JNI: use new max preprocessing constant
+80df185 Externally Reported Moderate Security Issue: SQL Injection in WAPPushManager
+28d823b Themes: Unapply specific components on theme uninstall
+d260036 framework-res: add AccountPreference style
+1999993 SystemUI: fix notifs not coming back after unmarking as spam
+a5f6354 Expose lock pattern path color for themes.
+8cb74ac WallpaperCropper: if generating a thumbnail fails, remove temp tile
+9e4c6b2 Automatic translation import
+
+   * packages/apps/Bluetooth
+8500758 Prevent duplicate OPP permission request dialogs
+998a0bc Check previous user confirmation before auto-confirm put request
+0454165 updateshare confirm logic missed cases like CONFIRMATION_DENIED, TIMEOUT. fix it
+
+   * packages/apps/CMAccount
+a28d045 Automatic translation import
+
+   * packages/apps/CMHome
+bf57314 Automatic translation import
+
+   * packages/apps/CMWallpapers
+cbd3dd6 Automatic translation import
+
+   * packages/apps/Contacts
+a656094 Contacts: Give progress updates and fix copy to sim if mAdnCache is empty.
+8156e92 Always use contacts sms icon for quick contact card
+4883ced Automatic translation import
+
+   * packages/apps/Mms
+e9098c0 Automatic translation import
+
+   * packages/apps/Settings
+75f0ef6 Settings: use new style for Account preferences
+3c3ba67 Expose text color for themes.
+2e88be2 Automatic translation import
+
+   * packages/apps/SoundRecorder
+b31b6a1 SoundRecorder: Rewrite logic to funnel all recorder interaction.
+
+   * packages/services/Telephony
+e63a8a5 Automatic translation import
+
+   * vendor/cm
+0cb72b9 apns: Added APNs for Movistar Peru
+ad8e81e Update APNs for Smartfren
+
+===================================
+Since Mon Mar 30 13:34:27 UTC 2015
+===================================
+
+   * external/koush/Superuser
+519abe9 Automatic translation import
+
+   * build
+91c1338 build: Add the factorypackage target
+
+   * external/libnfc-nci
+5f4c1e3 Revert "Call nfc_ncif_update_window after processing cback"
+
+   * external/whispersystems/WhisperPush
+75262e6 Automatic translation import
+
+   * frameworks/base
+3c71ea2 Automatic translation import
+
+   * hardware/qcom/fm
+285a93d Automatic translation import
+
+   * packages/apps/Apollo
+cc5b5da Automatic translation import
+
+   * packages/apps/BluetoothExt
+8381874 Automatic translation import
+
+   * packages/apps/Browser
+5456437 Automatic translation import
+
+   * packages/apps/CMAccount
+a1a9891 Updated strings
+2b839dd Automatic translation import
+
+   * packages/apps/CMBugReport
+2a1632d Automatic translation import
+
+   * packages/apps/CMFileManager
+70a0685 Automatic translation import
+
+   * packages/apps/CMUpdater
+aa014c6 Automatic translation import
+
+   * packages/apps/Calculator
+c886b68 Automatic translation import
+
+   * packages/apps/Calendar
+019856c Automatic translation import
+
+   * packages/apps/Camera2
+fae9ad0 Automatic translation import
+
+   * packages/apps/CellBroadcastReceiver
+d51d7ad Automatic translation import
+
+   * packages/apps/Contacts
+4ed4ab5 Automatic translation import
+
+   * packages/apps/DSPManager
+94129f4 Automatic translation import
+
+   * packages/apps/Exchange
+45c4333 Automatic translation import
+
+   * packages/apps/Mms
+c897c74 Automatic translation import
+
+   * packages/apps/Settings
+89d2bf7 Setttings: update KS strings
+5ffe52b Settings: make ks opt-out dialog non-cancelable
+1a3ec90 Automatic translation import
+
+   * packages/apps/SoundRecorder
+d6ccab7 soundrecorder: Don't allow writing to sdcard in user builds
+
+   * packages/apps/Stk
+e3ea49e Automatic translation import
+
+   * packages/apps/Trebuchet
+32f9144 Automatic translation import
+
+   * packages/inputmethods/LatinIME
+ebf0775 Rearrange Slavic & Greek morekeys
+e983eda Rearrange morekeys
+6391ff7 Automatic translation import
+
+   * packages/providers/DownloadProvider
+af8e6cd Automatic translation import
+
+   * packages/services/Telephony
+83ed4ee Automatic translation import
+
+   * packages/wallpapers/Basic
+eb9a771 PolarClock: Don't draw on invisible surfaces
+
+   * packages/wallpapers/PhotoPhase
+595bb1a Automatic translation import
+
+   * system/core
+32eb3e0 liblog: Forward xlog to regular android buffers on demand
+
+   * system/extras
+d178a34 setup_fs: Add an option to skip rebooting if formatting succeeds
+
+   * vendor/cm
+9ccb7ad terminal emulator: update libjackpal version
+
+===================================
+Since Mon Mar 23 18:11:11 UTC 2015
+===================================
+
+   * external/libnfc-nci
+070e334 pn547: Force rewrite of config even if we think it's the same
+
+   * external/wpa_supplicant_8
+66ad89f wpa_supplicant: Force the p2p channels to reuse frequencies used by STA
+0610e33 Android: Don't use extended P2P functionality (ANDROID_P2P) for wl12xx
+
+   * frameworks/base
+a1621d2 framework: add KillSwitch stubs
+1e86e5f Make forward/reverse lookup default overlay
+d34b545 Fix data cycle calculation when CYCLE_WEEKLY
+abc03db Properly clean up when setting new InputFilter.
+76c2dd5 ProtectedApps: setComponentProtectedSetting check null ComponentName
+c101881 WallpaperCropper: run addTemporaryWallpaperTile in an AsyncTask
+
+   * packages/apps/CMAccount
+49485e5 SetupWizard: Strings for kill switch
+
+   * packages/apps/CMFileManager
+d7558cf make sure MountPointInfo and DiskUsageInfo runs in the UI Thread.
+
+   * packages/apps/Contacts
+d6af4b6 fixed wrong number of elements in alert dialog
+
+   * packages/apps/ContactsCommon
+6eb9dda Only check for valid SIM on SIM accounts
+
+   * packages/apps/DeskClock
+d2918bf TimerReceiver: Correctly show the remaining time for 100 hours
+
+   * packages/apps/Settings
+7e8abf3 Remove leading space
+f06ea03 Settings: update kill switch
+a868b4b Settings: add killswitch logic to factory reset screen
+02d111f Themes: Add new background drawable for LockscreenTargets
+afdb7eb Settings: fix changing profile triggers not updating actions page
+4009a08 Themes: Expose hardcoded text colors
+
+   * packages/apps/Trebuchet
+f963b11 ProtectedApps: map items without componentNames by position
+4b60765 Protected Apps: fix insets so that views stay above navbar
+d8bdb0e ProtectedApps: Fix protecting shortcuts with no ComponentNames
+
+   * packages/apps/VoicePlus
+d4ad304 Use Locale country as fallback for TelephonyManager.
+dce662f Fix & improve country detection for cellular failover.
+
+   * packages/services/Telephony
+b7a2f9e callbarring: Only show error dialogs if the activity is running
+
+   * vendor/cm
+8af40b2 Airtel MMS - Add authtype=1 for PAP
+0e03dbd Update Telekom (T-Mobile) HU APN
+
