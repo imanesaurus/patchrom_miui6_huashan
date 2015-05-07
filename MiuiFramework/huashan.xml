@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+    <!--whether the device is pad-->
+    <bool name="is_pad">false</bool>
+    <!--whether the device is xiaomi-->
+    <bool name="is_xiaomi">false</bool>
+    <!--whether the device is hongmi-->
+    <bool name="is_hongmi">false</bool>
+    <!--whether install the fm app-->
+    <bool name="support_fm">true</bool>
+    <!--whether the device supports led light-->
+    <bool name="support_led_light">true</bool>
+    <!--whether the device supports emulated storage-->
+    <bool name="support_emulated_storage">true</bool>
+    <!--whether the device supports internal sdcard-->
+    <bool name="support_internal_sdcard">false</bool>
+    <!--the vendor feature, it's value may be qcom,mediatek,leadcore or nvidia-->
+    <string name="vendor">qcom</string>
+</features>
