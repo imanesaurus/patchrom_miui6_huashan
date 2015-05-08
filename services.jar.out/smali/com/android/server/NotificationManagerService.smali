@@ -4543,7 +4543,6 @@
     :goto_1
     if-nez v0, :cond_9
 
-    :cond_miui_0
     iget-object v8, p0, Lcom/android/server/NotificationManagerService;->mNotificationLight:Lcom/android/server/LightsService$Light;
 
     invoke-virtual {v8}, Lcom/android/server/LightsService$Light;->turnOff()V
@@ -4575,8 +4574,7 @@
 
     iget-boolean v8, p0, Lcom/android/server/NotificationManagerService;->mScreenOn:Z
 
-    #if-eqz v8, :cond_7
-    if-nez v8, :cond_miui_0
+    if-nez v8, :cond_6
 
     iget-object v8, p0, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
 
@@ -4590,11 +4588,12 @@
 
     move-result v8
 
-    #if-nez v8, :cond_7
+    if-nez v8, :cond_7
 
     iget-boolean v8, p0, Lcom/android/server/NotificationManagerService;->mDreaming:Z
 
     if-nez v8, :cond_7
+
     :cond_6
     const/4 v0, 0x0
 
