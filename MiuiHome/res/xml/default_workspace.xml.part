@@ -1,2 +1,2 @@
-com.android.camera/com.android.camera.Camera=com.oppo.camera/com.oppo.camera.Camera
-
+com.android.camera/com.android.camera.Camera=com.android.camera2/com.android.camera.CameraLauncher
+com.android.camera/com.android.camera.Camera=com.cyngn.cameranext/com.android.camera.CameraLauncher
