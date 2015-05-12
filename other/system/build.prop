@@ -139,12 +139,4 @@ persist.sys.mitalk.enable=true
 ro.config.ringtone=Ring_Synth_04.ogg
 ro.config.notification_sound=pixiedust.ogg
 ro.config.alarm_alert=Alarm_Classic.ogg
-
-# Lock Launcher in Memory
-ro.HOME_APP_ADJ=1
-
-# Performance Tunning
-debug.sf.hw=1
-debug.egl.hw=1
-debug.composition.type=c2d
 qemu.hw.mainkeys=1
