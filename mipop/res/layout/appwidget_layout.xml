@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widgetLayout" android:background="@drawable/bg_white" android:layout_width="104.0dip" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widgetMiPop" android:layout_width="52.0dip" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/mipopLayout" android:background="@drawable/bg_gray" android:layout_width="40.0dip" android:layout_height="62.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" />
+        <FrameLayout android:id="@id/widgetOn" android:background="@drawable/btn_bg_on" android:layout_width="40.0dip" android:layout_height="38.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/pop_on" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/widgetOff" android:background="@drawable/btn_bg_off" android:layout_width="40.0dip" android:layout_height="38.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="32.0dip">
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/pop_off" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="68.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/textSize" android:textColor="@color/widgetTextColor" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/widgetFullScreen" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_marginLeft="52.0dip">
+        <FrameLayout android:id="@id/fullLayout" android:background="@drawable/bg_gray" android:layout_width="40.0dip" android:layout_height="62.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" />
+        <FrameLayout android:id="@id/widgetFullOn" android:background="@drawable/btn_bg_on" android:layout_width="40.0dip" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/fullscreen_on" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/widgetFullOff" android:background="@drawable/btn_bg_off" android:layout_width="40.0dip" android:layout_height="38.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="32.0dip">
+            <ImageView android:id="@id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/fullscreen_off" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="68.0dip" android:layout_below="@id/fullLayout">
+            <TextView android:textSize="@dimen/textSize" android:textColor="@color/widgetTextColor" android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/full_screen" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="activity_divider">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/big_divider</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">28.0dip</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/txt_label_black</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/mainscreen_title_bg</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="mainscreen_tab_btn">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@drawable/mainscreen_tab_btn_txt_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="mainscreen_scan_view">
+        <item name="android:layout_weight">2.0</item>
+    </style>
+    <style name="mainscreen_items_view">
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="traffic_main_label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/txt_label_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="traffic_main_value">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="traffic_setting_txt">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="traffic_setting_item">
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">52.0dip</item>
+    </style>
+    <style name="traffic_setting_item.txt" parent="@style/traffic_setting_item">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="traffic_setting_item.img" parent="@style/traffic_setting_item">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+    </style>
+    <style name="traffic_setting_item.checkbox" parent="@style/traffic_setting_item">
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="list_item">
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="MainContainerTheme" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="bty_label">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/txt_label_black</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="bty_value">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/txt_label_black</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_dark">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_dark_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_green">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_green_small">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_dark_small">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_dark_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="btn_white">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_float_windows_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_white_float_windows_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="listview">
+        <item name="android:listSelector">@drawable/selector_list_item</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="tabhost_title" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="datamanage_tab_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/datamanage_tab_btn_txt_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_Dialog_Positive_Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_green_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_Dialog_Neutral_Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_dark_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_Dialog_Negative_Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/btn_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_dark_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_ToolBar_Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/toolbar_txt_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/toolbar_bg_selector</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_ToolBar_More_Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/toolbar_text_pressed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/popup_bg_selector</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Qihoo_ToolBar_Sort_Text">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/toolbar_text_pressed</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+</resources>

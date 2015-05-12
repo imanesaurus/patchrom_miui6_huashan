@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="txt_label_black">#ff2e3d47</color>
+    <color name="txt_status_gray">#ff7b9cac</color>
+    <color name="red">#ff9d2c2a</color>
+    <color name="green">#ff267724</color>
+    <color name="yellow">#ffae8413</color>
+    <color name="white">#ffffffff</color>
+    <color name="exam_progress">#ff5d8298</color>
+    <color name="big_divider">#ff83a4b4</color>
+    <color name="text_disabled">#ffb9d9e9</color>
+    <color name="half_black">#7d000000</color>
+    <color name="notify_text_dark">#ff181818</color>
+    <color name="datamanage_tab_title_text">#ff5d8298</color>
+    <color name="datamanage_tab_title_text_selected">#ff394956</color>
+    <color name="tab_bg">#c0ffffff</color>
+    <color name="dark_gray">#c8000000</color>
+    <color name="exam_result_good">#ff267724</color>
+    <color name="exam_result_bad">#ff9d2c2a</color>
+    <color name="toolbar_text_pressed">#ff394956</color>
+    <color name="popup_bg_pressed">#ffcde1ef</color>
+    <color name="transparent">#00000000</color>
+    <color name="widgetTextColor">#ff000000</color>
+</resources>

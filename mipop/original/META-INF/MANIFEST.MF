@@ -1,0 +1,210 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_20 (Sun Microsystems Inc.)
+
+Name: res/layout/appwidget_layout.xml
+SHA1-Digest: YEhfVR7SPl8P3TD5FMnT2TLHCqc=
+
+Name: res/drawable/home_selector.xml
+SHA1-Digest: ie04wpFfRJ7xEB/oicsUYRwSFTY=
+
+Name: res/drawable-hdpi/pop_off.png
+SHA1-Digest: HaVCFq+eEdwuWI51+4XWdf1HvRg=
+
+Name: res/drawable-hdpi/divider.png
+SHA1-Digest: UJ96DS1VeMmOgOlAkl+ZFH476dM=
+
+Name: res/drawable/btn_txt_selector.xml
+SHA1-Digest: ZNxBXAC5IqC7d5MdvqtP8xtz9T0=
+
+Name: res/drawable-hdpi/float_windows_summary_green_left2.png
+SHA1-Digest: XJUPnOnI6zHFiABg2CPB7rf3TJc=
+
+Name: res/drawable/btn_txt_float_windows_selector.xml
+SHA1-Digest: yHktKjqcTc7A0mKEumBgNWmeN0U=
+
+Name: res/drawable/btn_green_selector.xml
+SHA1-Digest: uWCClNp5vXvPFUxtfICvpQCQseM=
+
+Name: res/drawable-hdpi/float_windows_pressed.9.png
+SHA1-Digest: q+ETURg2Xc5V1743z2OrYDeIXWE=
+
+Name: res/drawable-hdpi/menu_pressed.png
+SHA1-Digest: hbacMcpnSiz/HP4f51an0ZpGO7I=
+
+Name: res/drawable/btn_dark_selector.xml
+SHA1-Digest: OR0fDVW47RSJH+AW9tf61eZ3ChE=
+
+Name: res/drawable-hdpi/bg_double.9.png
+SHA1-Digest: bOBdU86tK3DQdK+1zaPUZFIe0YI=
+
+Name: res/drawable-hdpi/idle.png
+SHA1-Digest: 8opPPXSxuSIEsk6KK/YmQA3GNCE=
+
+Name: res/drawable-hdpi/fullscreen_on.png
+SHA1-Digest: 8C1DpSgvWXBWutTstBqc79wuhBI=
+
+Name: res/drawable-hdpi/btn_dark_normal.9.png
+SHA1-Digest: Aasqs6Zc5ZN5niWSqqyWT4SqNHk=
+
+Name: res/drawable/idle_selector.xml
+SHA1-Digest: DyBRd9W+0zlZ9oNEjRHVwrin2I0=
+
+Name: res/xml/appwidget.xml
+SHA1-Digest: BdBAxtg9bWoCtKxUjZVY3eNYJ8g=
+
+Name: res/drawable-hdpi/back_pressed.png
+SHA1-Digest: OISxOjRGlZ2DmzrsKJIFi5/KCaI=
+
+Name: res/drawable-hdpi/ic.png
+SHA1-Digest: x+B+DxagKpvIQORnt0QY83Eipv8=
+
+Name: res/drawable/popup_bg_selector.xml
+SHA1-Digest: ltbBg6PjwRaChWdhnEOAW6EyPfs=
+
+Name: res/layout/singlegridappwidget_layout.xml
+SHA1-Digest: UvmV0oaJw/XCaVyTm8C+inhhgSk=
+
+Name: res/drawable/btn_white_float_windows_selector.xml
+SHA1-Digest: 4aFXt7em9KCaIFLqhe3N1Z7k/e4=
+
+Name: res/drawable-hdpi/top.png
+SHA1-Digest: fS8+tPm4KBjRVWCEcfZFkULVlGk=
+
+Name: res/drawable-hdpi/float_windows_normal.9.png
+SHA1-Digest: /j1HRfSA4zgdaGCL9CXj8OZUr1c=
+
+Name: res/drawable-hdpi/btn_bg_off.9.png
+SHA1-Digest: g6J87xypOiwpBDo/NG/JOrwNZ3U=
+
+Name: res/drawable/recent_selector.xml
+SHA1-Digest: XEdpcKe9NXi+ReEtfUcnQSIK4J8=
+
+Name: res/drawable-hdpi/float_windows_power.png
+SHA1-Digest: o3xnIG6fnk+8MRu9GmfxvgDfIFs=
+
+Name: res/drawable-hdpi/back.png
+SHA1-Digest: xCyBJ9CLi+Qqzj0VbIftsoHffdU=
+
+Name: res/drawable-hdpi/bg.9.png
+SHA1-Digest: fdelRtJ71GSE2Uju4gYrXPt4FOo=
+
+Name: res/drawable-hdpi/btn_bg_on.9.png
+SHA1-Digest: mt39Uzy+jts0S0pItfYskBGg0l8=
+
+Name: res/drawable-hdpi/decr.png
+SHA1-Digest: 0nGyIdvoYwQMmLO5A6NH1WC0W80=
+
+Name: res/drawable-hdpi/float_windows_summary_green.png
+SHA1-Digest: C0X0PMAV2UP+XjphtgfMsROjrSQ=
+
+Name: res/drawable-hdpi/home_pressed.png
+SHA1-Digest: A+1OcS8m5FZY8fJvZ/bob888caA=
+
+Name: res/drawable-hdpi/btn_dark_pressed.9.png
+SHA1-Digest: dd+1JCT+m96bdnRcf/GU9ePPcCE=
+
+Name: res/xml/mipop_settings.xml
+SHA1-Digest: RVJDrqswcTHmI9lAWyUtgmMF888=
+
+Name: res/layout/image_preference_layout.xml
+SHA1-Digest: cjmHJ7TP/M8j+yfJvpvuBII4O10=
+
+Name: res/drawable-hdpi/mainscreen_title_bg.9.png
+SHA1-Digest: hNg+36ao4ZEpNzxOLRmpmqM5bqE=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: 01b8xkkvFiUSBqzUMQ0W5ljun3M=
+
+Name: res/drawable/mainscreen_tab_btn_txt_color.xml
+SHA1-Digest: Lxua+LwXhGZWQJhleTBcp+01lWc=
+
+Name: res/drawable-hdpi/btn_green_pressed.9.png
+SHA1-Digest: xFUvoLlYhOYbLS8V7SuNoM9igQw=
+
+Name: res/drawable-hdpi/pop_on.png
+SHA1-Digest: Z8/TFEXY3QzMiiwW25AQ4k2/9UU=
+
+Name: res/drawable-hdpi/incr.png
+SHA1-Digest: wrJXwVsH1kKdpI8nv1nmPTFUQ2w=
+
+Name: resources.arsc
+SHA1-Digest: bNNkqn8W/wSkBtc7OsABXWzwIOY=
+
+Name: res/drawable-hdpi/bg_gray.9.png
+SHA1-Digest: j3WxA1osVjxD6WZOzQX7EPPjT4k=
+
+Name: res/drawable-hdpi/float_windows_close.png
+SHA1-Digest: t58wxI1Pbd5Gi9CIAyMXY4VizlU=
+
+Name: res/drawable-hdpi/recent.png
+SHA1-Digest: 7njYWjMnGGlz9MQxesy8nZlbIh4=
+
+Name: AndroidManifest.xml
+SHA1-Digest: ToYIP8a+iziJK/6lrfDPOY8D9ZU=
+
+Name: res/drawable-hdpi/bg_white.9.png
+SHA1-Digest: IK6Rf4MWcFYzut+JSKV7WN3XGHk=
+
+Name: res/drawable-hdpi/float_windows_main_back.9.png
+SHA1-Digest: H2VEcohUnufQQSLdrJztLq9Z4Bs=
+
+Name: res/drawable-hdpi/close.png
+SHA1-Digest: t58wxI1Pbd5Gi9CIAyMXY4VizlU=
+
+Name: res/drawable-hdpi/float_windows_summary_green_left.png
+SHA1-Digest: C0X0PMAV2UP+XjphtgfMsROjrSQ=
+
+Name: res/drawable/toolbar_txt_selector.xml
+SHA1-Digest: zS4JWI6ZdWotngOteSBZsLliXVg=
+
+Name: res/drawable-hdpi/fullscreen_off.png
+SHA1-Digest: SVPMTYlETF76tVXvG0+vr+x7qpM=
+
+Name: res/drawable/menu_selector.xml
+SHA1-Digest: qNZ5rMMzNLmfyufnz3Tj0v+xj6c=
+
+Name: res/drawable-hdpi/btn_disabled.9.png
+SHA1-Digest: gn8Li14B7OSKC6IaUfzHKUkY/Z4=
+
+Name: res/xml/singlegridappwidget.xml
+SHA1-Digest: /ibvrlh4HpwE6nXxxBhFCXiLf+4=
+
+Name: res/drawable-hdpi/appwidget_bg.9.png
+SHA1-Digest: nycjXy/ksyHRh99w1URCjj/tzGc=
+
+Name: res/drawable/selector_list_item.xml
+SHA1-Digest: EgbAFgNVZ3nz/sbe+COsryLDTgc=
+
+Name: res/drawable-hdpi/float_windows_summary_green1.png
+SHA1-Digest: pi+dFcnu+TUfmfsK1gBHN3Ssg4Y=
+
+Name: res/drawable-hdpi/float_windows_logo.png
+SHA1-Digest: tclHSwUukA+9iiL9/WEvs6yTu/A=
+
+Name: classes.dex
+SHA1-Digest: terGCchyHWW9l4NA0l+F+VWGBRw=
+
+Name: res/drawable-hdpi/list_bg_pressed.9.png
+SHA1-Digest: cdaJTggt0H2QjGSoXjHmxrNcq6s=
+
+Name: res/drawable-hdpi/datamanage_tab_btn_txt_color.xml
+SHA1-Digest: zTcw6keZzDC7NhLIDGYGDgpZ52Y=
+
+Name: res/drawable-hdpi/btn_green_normal.9.png
+SHA1-Digest: 0d2e/QyAuQ4okuwizS3By1gOO/s=
+
+Name: res/drawable-hdpi/menu.png
+SHA1-Digest: DsPVZIEOPo1T+uR3UjIU4mOqfpA=
+
+Name: res/drawable-hdpi/datamanage_tab_btn_bg_selected.9.png
+SHA1-Digest: NTNTp5VfirCtwG2RGa+razbrmok=
+
+Name: res/drawable-hdpi/recent_pressed.png
+SHA1-Digest: SudTAIAcEu687KPQ7Nm1C/Goy7c=
+
+Name: res/drawable-hdpi/home.png
+SHA1-Digest: dm+5rHl1x502YWYgFUnSQgy+WRE=
+
+Name: res/drawable/toolbar_bg_selector.xml
+SHA1-Digest: vqlylgTFdC+19cpLShqvJ1Y/qPg=
+

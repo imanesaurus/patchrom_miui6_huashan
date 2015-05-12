@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widgetText">20.0dip</dimen>
+    <dimen name="on2Top">10.0dip</dimen>
+    <dimen name="off2Top">50.0dip</dimen>
+    <dimen name="text2Bottom">1.0dip</dimen>
+    <dimen name="widgetHeight">80.0dip</dimen>
+    <dimen name="widgetWidth">72.0dip</dimen>
+    <dimen name="textSize">11.0dip</dimen>
+</resources>

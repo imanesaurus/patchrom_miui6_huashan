@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi-POP</string>
+    <string name="full_screen">底部条</string>
+    <string name="mipop_title">Mi-POP</string>
+    <string name="mipop_switch_title">Mi-POP</string>
+    <string name="mipop_switch_summary">Mi-POP enabled，the nevigation bar could be replaced</string>
+    <string name="mipop_fullscreen_title">Hide the navigation bar</string>
+    <string name="mipop_fullscreen_summary">Larger screen area available</string>
+    <string name="widgetName">Mi-pop</string>
+    <string name="widgetText">Mi-pop</string>
+</resources>

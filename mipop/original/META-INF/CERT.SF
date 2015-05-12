@@ -1,0 +1,211 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: 4R3VGjk1yhs6NsHdBHUAE8q1lVA=
+
+Name: res/layout/appwidget_layout.xml
+SHA1-Digest: l6B7PQekuXZ0tOVP8HTKVLEShNk=
+
+Name: res/drawable/home_selector.xml
+SHA1-Digest: BvqW778AfU7Z3m4HTL4Oq0z5BfY=
+
+Name: res/drawable-hdpi/pop_off.png
+SHA1-Digest: vgkeenJTZRkQWQ3Kww+BAC5U0C4=
+
+Name: res/drawable-hdpi/divider.png
+SHA1-Digest: r/sZY3WkjA0tgxlhFz+BhzuuCYQ=
+
+Name: res/drawable/btn_txt_selector.xml
+SHA1-Digest: +OyerObiuOcRF2asuMVmqJuWFwA=
+
+Name: res/drawable-hdpi/float_windows_summary_green_left2.png
+SHA1-Digest: u//zRU0ZxAJH4+Bg4TDeiCjnDcQ=
+
+Name: res/drawable/btn_txt_float_windows_selector.xml
+SHA1-Digest: hkeIXhk55q7hyrG/VPJdH7+uRSw=
+
+Name: res/drawable/btn_green_selector.xml
+SHA1-Digest: CZncj8qxZB1kF00aB5S9fNF4Z5g=
+
+Name: res/drawable-hdpi/float_windows_pressed.9.png
+SHA1-Digest: EoTEqKdHThAyy7FvLGw6oqQrlhY=
+
+Name: res/drawable-hdpi/menu_pressed.png
+SHA1-Digest: PVJd14x6czsCiCTjvzWoxUs7j6M=
+
+Name: res/drawable/btn_dark_selector.xml
+SHA1-Digest: pSu9bhdDIjETKmfPTig15F+DI8w=
+
+Name: res/drawable-hdpi/bg_double.9.png
+SHA1-Digest: zp5+O2iW67Mm4jWQrBMvNEa2mTk=
+
+Name: res/drawable-hdpi/idle.png
+SHA1-Digest: Jtd3ptgmJy/OPiq0GZzCynGl5tQ=
+
+Name: res/drawable-hdpi/fullscreen_on.png
+SHA1-Digest: iC4NemqcCTU99gFh+NRCe3g7NX8=
+
+Name: res/drawable-hdpi/btn_dark_normal.9.png
+SHA1-Digest: Alhf0QdzUbvSX3TZU471o19MYo0=
+
+Name: res/drawable/idle_selector.xml
+SHA1-Digest: lUwdmaSq2tPM2oczrgSb4kGuX/o=
+
+Name: res/xml/appwidget.xml
+SHA1-Digest: u3LWVsN55K6WuZtrG47PJCx8bk4=
+
+Name: res/drawable-hdpi/ic.png
+SHA1-Digest: s/u3rd8SrYxuz7ljyLwNt27ohsU=
+
+Name: res/drawable-hdpi/back_pressed.png
+SHA1-Digest: hDUOV7IRbF5qwyJOsCvbDfw39MQ=
+
+Name: res/drawable/popup_bg_selector.xml
+SHA1-Digest: P1CHLGVj0f0K0K5lbfKTpEVwjGE=
+
+Name: res/drawable/btn_white_float_windows_selector.xml
+SHA1-Digest: qXiRhxoh90AVNtIeYyffnpF3jmk=
+
+Name: res/layout/singlegridappwidget_layout.xml
+SHA1-Digest: b+g2jHE8Gjr56xKrmEynPR6vs/k=
+
+Name: res/drawable-hdpi/top.png
+SHA1-Digest: qc6q28WsHzo2yBFQ/BE3QT6nM10=
+
+Name: res/drawable-hdpi/float_windows_normal.9.png
+SHA1-Digest: KEJ2H98H6Z9XFJS3qwt/32p/hWk=
+
+Name: res/drawable-hdpi/btn_bg_off.9.png
+SHA1-Digest: 0XEIDYWmSAp1Fa0nDmWwr+hepUA=
+
+Name: res/drawable/recent_selector.xml
+SHA1-Digest: ucehT+aVOtsogJjXPN+mXxKCYC4=
+
+Name: res/drawable-hdpi/float_windows_power.png
+SHA1-Digest: 9KnEBakqcYjmPRTJXLBTCGse7zs=
+
+Name: res/drawable-hdpi/back.png
+SHA1-Digest: 6OwuGjo9LWlw+nufAdCpeJBeTIU=
+
+Name: res/drawable-hdpi/bg.9.png
+SHA1-Digest: 7Ae12QbCqqxZ3afT8PAn4SzvP/E=
+
+Name: res/drawable-hdpi/btn_bg_on.9.png
+SHA1-Digest: z2FJe86y1vQOYqT1QfrXFwOpmIs=
+
+Name: res/drawable-hdpi/decr.png
+SHA1-Digest: ZcB3BKilyXuihQTcfF5oGiywbQ0=
+
+Name: res/drawable-hdpi/float_windows_summary_green.png
+SHA1-Digest: FPKW6htgTfPOnmnlEclVGKAgNII=
+
+Name: res/drawable-hdpi/home_pressed.png
+SHA1-Digest: D9PqStCz0VwBXramZpR0uwK280Y=
+
+Name: res/drawable-hdpi/btn_dark_pressed.9.png
+SHA1-Digest: 7hoM8wmda04YlhziFjDBhtZz8Cw=
+
+Name: res/xml/mipop_settings.xml
+SHA1-Digest: mTLoWBX4EZaFp2/itjsVNXkHDBo=
+
+Name: res/layout/image_preference_layout.xml
+SHA1-Digest: +YIjAhTofkz7xrmtFZ60Nfm7SgA=
+
+Name: res/drawable-hdpi/mainscreen_title_bg.9.png
+SHA1-Digest: 3tqNRFD6A3rr8ugiYKuHg08YAgM=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: ST93+OhVF7hEVB5egziLo6LkH0s=
+
+Name: res/drawable/mainscreen_tab_btn_txt_color.xml
+SHA1-Digest: MjfxOoYVSJ4qJU/icrlv4YqeDAw=
+
+Name: res/drawable-hdpi/btn_green_pressed.9.png
+SHA1-Digest: cOdG8hnW9sPKr6BhBE9ZRs0Wmh0=
+
+Name: res/drawable-hdpi/pop_on.png
+SHA1-Digest: yr5G/qhZSPrXObJy4M/TnJJjtng=
+
+Name: res/drawable-hdpi/incr.png
+SHA1-Digest: hdamWemzWK/tDUUZoR+CXU6c7TQ=
+
+Name: resources.arsc
+SHA1-Digest: iQI1n5QKgNNl/kpiqziVLWOi1Dc=
+
+Name: res/drawable-hdpi/bg_gray.9.png
+SHA1-Digest: 0sHhL8eek5LqO9c2N8crJW9FLx8=
+
+Name: res/drawable-hdpi/float_windows_close.png
+SHA1-Digest: NsyhRJBow/zkKFN5uYcvsZARbxQ=
+
+Name: res/drawable-hdpi/recent.png
+SHA1-Digest: OMohZkzSViLTBQ9QWk1v/R6BST0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Z9OO+kVS6H6lL2eEeCausbVagHk=
+
+Name: res/drawable-hdpi/bg_white.9.png
+SHA1-Digest: UCHJVndaiTzLxKE7U4aSYe4VC1g=
+
+Name: res/drawable-hdpi/float_windows_main_back.9.png
+SHA1-Digest: 41Eyx6W0Kd7TSE7Up4BbPMCILog=
+
+Name: res/drawable-hdpi/close.png
+SHA1-Digest: TFU3q2XhsSSXi8vOAk5QpXv5Srw=
+
+Name: res/drawable-hdpi/float_windows_summary_green_left.png
+SHA1-Digest: q9OHWrOHQPJzXJDhSS/vQ0b7oHU=
+
+Name: res/drawable-hdpi/fullscreen_off.png
+SHA1-Digest: +DJueR+c3Y5abyIN9ANq5x9vRZc=
+
+Name: res/drawable/toolbar_txt_selector.xml
+SHA1-Digest: FiKkEFvoKCLIF6PYYUgLf2cK0bY=
+
+Name: res/drawable-hdpi/btn_disabled.9.png
+SHA1-Digest: aly8WOEusqWU3pHFNfumJLErwzM=
+
+Name: res/drawable/menu_selector.xml
+SHA1-Digest: YkifRWE9AoEOMkhOhbkN0JN3C9E=
+
+Name: res/xml/singlegridappwidget.xml
+SHA1-Digest: UOMjrGV3xjedAY36dNrxUflaM6s=
+
+Name: res/drawable-hdpi/appwidget_bg.9.png
+SHA1-Digest: R/RPLQu244kZU5nKkWH+OMaQTq8=
+
+Name: res/drawable-hdpi/float_windows_summary_green1.png
+SHA1-Digest: v13h3ZjFo/6zNXC7e6A37WALtpk=
+
+Name: res/drawable/selector_list_item.xml
+SHA1-Digest: 1uAvtg9oQA1O0xUm98oRCHm86wU=
+
+Name: res/drawable-hdpi/float_windows_logo.png
+SHA1-Digest: tWo1ysYNbEfnW2w8HtrPnRPiB/g=
+
+Name: classes.dex
+SHA1-Digest: +/9jdc6yjaFNWONeNrPqdV506ng=
+
+Name: res/drawable-hdpi/list_bg_pressed.9.png
+SHA1-Digest: RdK5XnxpuoGGMJYjqqzXGvMlkkg=
+
+Name: res/drawable-hdpi/datamanage_tab_btn_txt_color.xml
+SHA1-Digest: wPO6LdzDfEp+vYyPBI+pMDcpBYY=
+
+Name: res/drawable-hdpi/menu.png
+SHA1-Digest: bOTgNYdY10oUp33aO5aeW0l35Aw=
+
+Name: res/drawable-hdpi/btn_green_normal.9.png
+SHA1-Digest: 9w4zEfkCCA0bilYUHT9/fk+Y8BA=
+
+Name: res/drawable-hdpi/recent_pressed.png
+SHA1-Digest: 1OEkLoYEMQg/JOdN43/hhijK80o=
+
+Name: res/drawable-hdpi/datamanage_tab_btn_bg_selected.9.png
+SHA1-Digest: otnn2fe8H9e/CTSuv+DP33JHp0o=
+
+Name: res/drawable-hdpi/home.png
+SHA1-Digest: /9s8c/0buij1u60Mndf78EWYwr8=
+
+Name: res/drawable/toolbar_bg_selector.xml
+SHA1-Digest: DivTbQBvS2P1WE87d9h+L56tV+w=
+

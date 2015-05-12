@@ -147,3 +147,4 @@ ro.HOME_APP_ADJ=1
 debug.sf.hw=1
 debug.egl.hw=1
 debug.composition.type=c2d
+qemu.hw.mainkeys=1

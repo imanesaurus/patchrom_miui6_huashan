@@ -12,7 +12,7 @@ local-out-zip-file := MIUI_huashan.zip
 local-previous-target-dir := 
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := 
+local-modified-apps := mipop
 
 local-modified-jars :=
 
@@ -21,7 +21,7 @@ local-miui-removed-apps :=
 
 local-miui-removed-priv-apps := 
 
-local-miui-modified-apps := MiuiFramework MiuiHome SecurityCenter MiuiSystemUI DeskClock
+local-miui-modified-apps := MiuiFramework MiuiHome MiuiSystemUI SecurityCenter Settings DeskClock TeleService
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
