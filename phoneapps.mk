@@ -1,8 +1,7 @@
 local-phone-apps = $(private-phone-apps)
 local-phone-priv-apps = $(private-phone-priv-apps)
 
-private-phone-apps := ApplicationsProvider \
-		BasicDreams \
+private-phone-apps := BasicDreams \
 		Bluetooth \
 		BluetoothExt \
 		CertInstaller \
@@ -11,10 +10,10 @@ private-phone-apps := ApplicationsProvider \
 		HoloSpiralWallpaper \
 		HTMLViewer \
 		KeyChain \
-		LatinIME \
 		LiveWallpapers \
 		MagicSmokeWallpapers \
 		NoiseField \
+		Nfc \
 		PacProcessor \
 		PhaseBeam \
 		PhotoTable \
