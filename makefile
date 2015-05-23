@@ -12,16 +12,18 @@ local-out-zip-file := MIUI_huashan.zip
 local-previous-target-dir := 
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := mipop
+local-modified-apps :=
+
+local-modified-priv-apps := MIPop 
 
 local-modified-jars :=
 
 # All apks from MIUI
-local-miui-removed-apps := 
+local-miui-removed-apps :=
 
-local-miui-removed-priv-apps := 
+local-miui-removed-priv-apps :=
 
-local-miui-modified-apps := MiuiFramework MiuiHome MiuiSystemUI SecurityCenter Settings DeskClock TeleService
+local-miui-modified-apps := MiuiFramework MiuiSystemUI MiuiHome SecurityCenter Settings TeleService
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
@@ -51,8 +53,11 @@ PORT_PRODUCT：= huashan_imanesaurus
 #pre_install_data_packages := $(TMP_DIR)/pre_install_apk_pkgname.txt
 local-pre-zip-misc:
 	@echo Update boot.img
-	cp other/boot.img $(ZIP_DIR)/boot.img
-
+	cp -rf other/boot.img $(ZIP_DIR)/boot.img
+	@echo Update build.prop
+	cp -rf other/system/build.prop $(ZIP_DIR)/system/build.prop
+	
+	@echo Added some custom app
 	cp -rf other/system $(ZIP_DIR)/
 
 	@echo goodbye! miui prebuilt binaries!
