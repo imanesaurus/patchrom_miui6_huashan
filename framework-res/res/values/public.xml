@@ -7234,8 +7234,9 @@
     <public type="xml" name="profile_default" id="0x010f000f" />
     <public type="xml" name="sms_short_codes" id="0x010f0010" />
     <public type="xml" name="storage_list" id="0x010f0011" />
-    <public type="xml" name="time_zones_by_country" id="0x010f0012" />
-    <public type="xml" name="vendors" id="0x010f0013" />
+    <public type="xml" name="storage_list_legacy" id="0x010f0012" />
+    <public type="xml" name="time_zones_by_country" id="0x010f0013" />
+    <public type="xml" name="vendors" id="0x010f0014" />
     <public type="raw" name="accessibility_gestures" id="0x01100000" />
     <public type="raw" name="fallbackring" id="0x01100001" />
     <public type="raw" name="incognito_mode_start_page" id="0x01100002" />

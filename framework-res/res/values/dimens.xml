@@ -5,21 +5,21 @@
     <dimen name="thumbnail_width">164.0dip</dimen>
     <item type="dimen" name="dialog_min_width_major">65.0%</item>
     <item type="dimen" name="dialog_min_width_minor">95.00001%</item>
-    <dimen name="notification_large_icon_width">64.0dip</dimen>
-    <dimen name="notification_large_icon_height">64.0dip</dimen>
+    <dimen name="notification_large_icon_width">50.0dip</dimen>
+    <dimen name="notification_large_icon_height">50.0dip</dimen>
     <dimen name="config_prefDialogWidth">320.0dip</dimen>
     <dimen name="config_viewConfigurationTouchSlop">8.0dip</dimen>
-    <dimen name="config_minScalingSpan">27.0mm</dimen>
+    <dimen name="config_minScalingSpan">35.0mm</dimen>
     <dimen name="config_minScalingTouchMajor">48.0dip</dimen>
     <dimen name="toast_y_offset">64.0dip</dimen>
     <dimen name="status_bar_height">25.0dip</dimen>
-    <dimen name="navigation_bar_height">48.0dip</dimen>
-    <dimen name="navigation_bar_height_landscape">48.0dip</dimen>
-    <dimen name="navigation_bar_width">42.0dip</dimen>
+    <dimen name="navigation_bar_height">36.0dip</dimen>
+    <dimen name="navigation_bar_height_landscape">38.0dip</dimen>
+    <dimen name="navigation_bar_width">32.0dip</dimen>
     <dimen name="status_bar_icon_size">24.0dip</dimen>
     <dimen name="status_bar_content_number_size">48.0sp</dimen>
     <item type="dimen" name="system_bar_height">@dimen/navigation_bar_height</item>
-    <dimen name="system_bar_icon_size">32.0dip</dimen>
+    <dimen name="system_bar_icon_size">24.0dip</dimen>
     <dimen name="status_bar_edge_ignore">5.0dip</dimen>
     <dimen name="fastscroll_overlay_size">104.0dip</dimen>
     <dimen name="fastscroll_overlay_text_size">52.0sp</dimen>
@@ -136,4 +136,10 @@
     <dimen name="webviewchromium_color_picker_gradient_margin">14.5dip</dimen>
     <dimen name="webviewchromium_autofill_text_height">44.0dip</dimen>
     <dimen name="webviewchromium_autofill_text_divider_height">1.0px</dimen>
+    <dimen name="notification_content_margin_left_to_icon">13.0dip</dimen>
+    <dimen name="notification_height">65.0dip</dimen>
+    <dimen name="notification_padding_left">0.0dip</dimen>
+    <dimen name="notification_padding_right">0.0dip</dimen>
+    <dimen name="notification_action_height">48.0dip</dimen>
+    <dimen name="notification_action_text_size">14.0dip</dimen>
 </resources>
