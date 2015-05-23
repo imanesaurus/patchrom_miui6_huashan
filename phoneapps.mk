@@ -5,8 +5,6 @@ private-phone-apps := ApplicationsProvider \
 		BasicDreams \
 		Bluetooth \
 		BluetoothExt \
-		Camera2 \
-		CellBroadcastReceiver \
 		CertInstaller \
 		DocumentsUI \
 		Galaxy4 \
@@ -16,34 +14,23 @@ private-phone-apps := ApplicationsProvider \
 		LatinIME \
 		LiveWallpapers \
 		MagicSmokeWallpapers \
-		NfcNci \
+		NoiseField \
 		PacProcessor \
 		PhaseBeam \
-		PhotoPhase \
 		PhotoTable \
 		PrintSpooler \
-		qcrilmsgtunnel \
-		QuickBoot \
-		shutdownlistener \
 		Stk \
-		TimeService \
 		UserDictionaryProvider \
 		VisualizationWallpapers \
-		WAPPushManager \
+		WAPPushManager
 
 private-phone-priv-apps := BackupRestoreConfirmation \
-		com.qualcomm.location \
 		DefaultContainerService \
-		DownloadProvider \
 		InputDevices \
 		ExternalStorageProvider \
 		MediaProvider \
-		FusedLocation \
-		PicoTts \
 		ProxyHandler \
-		SettingsProvider \
 		SharedStorageBackup \
 		Shell \
 		Tag \
-		ThemesProvider \
-		WallpaperCropper \
+		WallpaperCropper

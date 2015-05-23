@@ -401,7 +401,7 @@
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
     if-eqz v5, :cond_1
 
-    const/high16 v10, 0x1040000
+    sget v10, Lcom/android/internal/R$string;->cancel:I
 
     const/4 v12, 0x0
 

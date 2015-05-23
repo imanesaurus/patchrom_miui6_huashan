@@ -3401,7 +3401,7 @@
 .end method
 
 .method private readStorageListLocked()V
-    .locals 31
+    .locals 34
 
     .prologue
     move-object/from16 v0, p0
@@ -3422,22 +3422,102 @@
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v24
+    move-result-object v27
 
-    .local v24, "resources":Landroid/content/res/Resources;
+    .local v27, "resources":Landroid/content/res/Resources;
     const v19, 0x10f0011
 
     .local v19, "id":I
-    move-object/from16 v0, v24
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v26
+
+    .local v26, "pkg":Ljava/lang/String;
+    const-string v3, "storage_list_legacy"
+
+    const-string v12, "xml"
+
+    move-object/from16 v0, v27
+
+    move-object/from16 v1, v26
+
+    invoke-virtual {v0, v3, v12, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v20
+
+    .local v20, "idAlt":I
+    const-string v3, "sys.storage_legacy"
+
+    const-string v12, ""
+
+    invoke-static {v3, v12}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v23
+
+    .local v23, "legacy":Ljava/lang/String;
+    const/16 v24, 0x0
+
+    .local v24, "parser":Landroid/content/res/XmlResourceParser;
+    const-string v3, "1"
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    const-string v3, "true"
+
+    move-object/from16 v0, v23
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    :cond_0
+    if-eqz v20, :cond_1
+
+    move-object/from16 v0, v27
+
+    move/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
+
+    move-result-object v24
+
+    const-string v3, "MountService"
+
+    const-string v12, "readStorageListLocked: using legacy storage list"
+
+    invoke-static {v3, v12}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    if-nez v24, :cond_2
+
+    const-string v3, "MountService"
+
+    const-string v12, "readStorageListLocked: using default storage list"
+
+    invoke-static {v3, v12}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object/from16 v0, v27
 
     move/from16 v1, v19
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
-    move-result-object v22
+    move-result-object v24
 
-    .local v22, "parser":Landroid/content/res/XmlResourceParser;
-    invoke-static/range {v22 .. v22}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
+    :cond_2
+    invoke-static/range {v24 .. v24}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v14
 
@@ -3445,15 +3525,15 @@
     :try_start_0
     const-string v3, "StorageList"
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v24
 
     invoke-static {v0, v3}, Lcom/android/internal/util/XmlUtils;->beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
 
-    :cond_0
+    :cond_3
     :goto_0
-    invoke-static/range {v22 .. v22}, Lcom/android/internal/util/XmlUtils;->nextElement(Lorg/xmlpull/v1/XmlPullParser;)V
+    invoke-static/range {v24 .. v24}, Lcom/android/internal/util/XmlUtils;->nextElement(Lorg/xmlpull/v1/XmlPullParser;)V
 
-    invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->getName()Ljava/lang/String;
+    invoke-interface/range {v24 .. v24}, Landroid/content/res/XmlResourceParser;->getName()Ljava/lang/String;
     :try_end_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
@@ -3462,17 +3542,17 @@
     move-result-object v17
 
     .local v17, "element":Ljava/lang/String;
-    if-nez v17, :cond_3
+    if-nez v17, :cond_6
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/MountService;->isExternalStorageEmulated()Z
 
     move-result v3
 
-    if-eqz v3, :cond_d
+    if-eqz v3, :cond_10
 
-    const/16 v20, 0x1
+    const/16 v21, 0x1
 
-    .local v20, "index":I
+    .local v21, "index":I
     :goto_1
     move-object/from16 v0, p0
 
@@ -3483,13 +3563,13 @@
     move-result-object v18
 
     .local v18, "i$":Ljava/util/Iterator;
-    :cond_1
+    :cond_4
     :goto_2
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_e
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3502,33 +3582,33 @@
 
     move-result v3
 
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_5
 
     invoke-virtual {v2}, Landroid/os/storage/StorageVolume;->isPrimary()Z
 
     move-result v3
 
-    if-nez v3, :cond_1
+    if-nez v3, :cond_4
 
-    :cond_2
-    add-int/lit8 v21, v20, 0x1
+    :cond_5
+    add-int/lit8 v22, v21, 0x1
 
-    .end local v20    # "index":I
-    .local v21, "index":I
-    move/from16 v0, v20
+    .end local v21    # "index":I
+    .local v22, "index":I
+    move/from16 v0, v21
 
     invoke-virtual {v2, v0}, Landroid/os/storage/StorageVolume;->setStorageId(I)V
 
-    move/from16 v20, v21
+    move/from16 v21, v22
 
-    .end local v21    # "index":I
-    .restart local v20    # "index":I
+    .end local v22    # "index":I
+    .restart local v21    # "index":I
     goto :goto_2
 
     .end local v2    # "volume":Landroid/os/storage/StorageVolume;
     .end local v18    # "i$":Ljava/util/Iterator;
-    .end local v20    # "index":I
-    :cond_3
+    .end local v21    # "index":I
+    :cond_6
     :try_start_1
     const-string v3, "storage"
 
@@ -3538,11 +3618,11 @@
 
     move-result v3
 
-    if-eqz v3, :cond_0
+    if-eqz v3, :cond_3
 
     sget-object v3, Lcom/android/internal/R$styleable;->Storage:[I
 
-    move-object/from16 v0, v24
+    move-object/from16 v0, v27
 
     invoke-virtual {v0, v14, v3}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -3553,9 +3633,9 @@
 
     invoke-virtual {v13, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
-    move-result-object v23
+    move-result-object v25
 
-    .local v23, "path":Ljava/lang/String;
+    .local v25, "path":Ljava/lang/String;
     const/4 v3, 0x1
 
     const/4 v12, -0x1
@@ -3627,15 +3707,15 @@
 
     int-to-long v0, v3
 
-    move-wide/from16 v27, v0
+    move-wide/from16 v30, v0
 
-    const-wide/16 v29, 0x400
+    const-wide/16 v32, 0x400
 
-    mul-long v27, v27, v29
+    mul-long v30, v30, v32
 
-    const-wide/16 v29, 0x400
+    const-wide/16 v32, 0x400
 
-    mul-long v10, v27, v29
+    mul-long v10, v30, v32
 
     .local v10, "maxFileSize":J
     const-string v3, "MountService"
@@ -3644,23 +3724,23 @@
 
     invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v27, "got storage path: "
+    const-string v30, "got storage path: "
 
-    move-object/from16 v0, v27
-
-    invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    move-object/from16 v0, v23
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v12
 
-    const-string v27, " description: "
+    move-object/from16 v0, v25
 
-    move-object/from16 v0, v27
+    invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    const-string v30, " description: "
+
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3670,9 +3750,9 @@
 
     move-result-object v12
 
-    const-string v27, " primary: "
+    const-string v30, " primary: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3682,9 +3762,9 @@
 
     move-result-object v12
 
-    const-string v27, " removable: "
+    const-string v30, " removable: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3694,9 +3774,9 @@
 
     move-result-object v12
 
-    const-string v27, " emulated: "
+    const-string v30, " emulated: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3706,9 +3786,9 @@
 
     move-result-object v12
 
-    const-string v27, " mtpReserve: "
+    const-string v30, " mtpReserve: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3718,9 +3798,9 @@
 
     move-result-object v12
 
-    const-string v27, " allowMassStorage: "
+    const-string v30, " allowMassStorage: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3730,9 +3810,9 @@
 
     move-result-object v12
 
-    const-string v27, " maxFileSize: "
+    const-string v30, " maxFileSize: "
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3748,9 +3828,9 @@
 
     invoke-static {v3, v12}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_9
 
-    if-eqz v5, :cond_6
+    if-eqz v5, :cond_9
 
     new-instance v2, Landroid/os/storage/StorageVolume;
 
@@ -3778,12 +3858,12 @@
 
     invoke-static {}, Lcom/android/server/pm/UserManagerService;->getInstance()Lcom/android/server/pm/UserManagerService;
 
-    move-result-object v26
+    move-result-object v29
 
-    .local v26, "userManager":Lcom/android/server/pm/UserManagerService;
+    .local v29, "userManager":Lcom/android/server/pm/UserManagerService;
     const/4 v3, 0x0
 
-    move-object/from16 v0, v26
+    move-object/from16 v0, v29
 
     invoke-virtual {v0, v3}, Lcom/android/server/pm/UserManagerService;->getUsers(Z)Ljava/util/List;
 
@@ -3799,16 +3879,16 @@
 
     move-result v3
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_b
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v25
+    move-result-object v28
 
-    check-cast v25, Landroid/content/pm/UserInfo;
+    check-cast v28, Landroid/content/pm/UserInfo;
 
-    .local v25, "user":Landroid/content/pm/UserInfo;
-    invoke-virtual/range {v25 .. v25}, Landroid/content/pm/UserInfo;->getUserHandle()Landroid/os/UserHandle;
+    .local v28, "user":Landroid/content/pm/UserInfo;
+    invoke-virtual/range {v28 .. v28}, Landroid/content/pm/UserInfo;->getUserHandle()Landroid/os/UserHandle;
 
     move-result-object v3
 
@@ -3829,9 +3909,9 @@
     .end local v15    # "description":Ljava/lang/CharSequence;
     .end local v17    # "element":Ljava/lang/String;
     .end local v18    # "i$":Ljava/util/Iterator;
-    .end local v23    # "path":Ljava/lang/String;
-    .end local v25    # "user":Landroid/content/pm/UserInfo;
-    .end local v26    # "userManager":Lcom/android/server/pm/UserManagerService;
+    .end local v25    # "path":Ljava/lang/String;
+    .end local v28    # "user":Landroid/content/pm/UserInfo;
+    .end local v29    # "userManager":Lcom/android/server/pm/UserManagerService;
     :catch_0
     move-exception v16
 
@@ -3855,11 +3935,11 @@
 
     move-result v12
 
-    if-eqz v12, :cond_c
+    if-eqz v12, :cond_f
 
-    const/16 v20, 0x1
+    const/16 v21, 0x1
 
-    .restart local v20    # "index":I
+    .restart local v21    # "index":I
     :goto_4
     move-object/from16 v0, p0
 
@@ -3870,13 +3950,13 @@
     move-result-object v18
 
     .restart local v18    # "i$":Ljava/util/Iterator;
-    :cond_4
+    :cond_7
     :goto_5
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v12
 
-    if-eqz v12, :cond_a
+    if-eqz v12, :cond_d
 
     invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -3889,32 +3969,32 @@
 
     move-result v12
 
-    if-eqz v12, :cond_5
+    if-eqz v12, :cond_8
 
     invoke-virtual {v2}, Landroid/os/storage/StorageVolume;->isPrimary()Z
 
     move-result v12
 
-    if-nez v12, :cond_4
+    if-nez v12, :cond_7
 
-    :cond_5
-    add-int/lit8 v21, v20, 0x1
+    :cond_8
+    add-int/lit8 v22, v21, 0x1
 
-    .end local v20    # "index":I
-    .restart local v21    # "index":I
-    move/from16 v0, v20
+    .end local v21    # "index":I
+    .restart local v22    # "index":I
+    move/from16 v0, v21
 
     invoke-virtual {v2, v0}, Landroid/os/storage/StorageVolume;->setStorageId(I)V
 
-    move/from16 v20, v21
+    move/from16 v21, v22
 
-    .end local v21    # "index":I
-    .restart local v20    # "index":I
+    .end local v22    # "index":I
+    .restart local v21    # "index":I
     goto :goto_5
 
     .end local v2    # "volume":Landroid/os/storage/StorageVolume;
     .end local v18    # "i$":Ljava/util/Iterator;
-    .end local v20    # "index":I
+    .end local v21    # "index":I
     .restart local v4    # "descriptionId":I
     .restart local v5    # "primary":Z
     .restart local v6    # "removable":Z
@@ -3925,13 +4005,13 @@
     .restart local v13    # "a":Landroid/content/res/TypedArray;
     .restart local v15    # "description":Ljava/lang/CharSequence;
     .restart local v17    # "element":Ljava/lang/String;
-    .restart local v23    # "path":Ljava/lang/String;
-    :cond_6
-    if-eqz v23, :cond_7
+    .restart local v25    # "path":Ljava/lang/String;
+    :cond_9
+    if-eqz v25, :cond_a
 
-    if-nez v15, :cond_9
+    if-nez v15, :cond_c
 
-    :cond_7
+    :cond_a
     :try_start_3
     const-string v3, "MountService"
 
@@ -3943,7 +4023,7 @@
     .end local v6    # "removable":Z
     .end local v7    # "emulated":Z
     .end local v9    # "allowMassStorage":Z
-    :cond_8
+    :cond_b
     :goto_6
     invoke-virtual {v13}, Landroid/content/res/TypedArray;->recycle()V
     :try_end_3
@@ -3959,7 +4039,7 @@
     .end local v13    # "a":Landroid/content/res/TypedArray;
     .end local v15    # "description":Ljava/lang/CharSequence;
     .end local v17    # "element":Ljava/lang/String;
-    .end local v23    # "path":Ljava/lang/String;
+    .end local v25    # "path":Ljava/lang/String;
     :catch_1
     move-exception v16
 
@@ -3986,14 +4066,14 @@
     .restart local v13    # "a":Landroid/content/res/TypedArray;
     .restart local v15    # "description":Ljava/lang/CharSequence;
     .restart local v17    # "element":Ljava/lang/String;
-    .restart local v23    # "path":Ljava/lang/String;
-    :cond_9
+    .restart local v25    # "path":Ljava/lang/String;
+    :cond_c
     :try_start_5
     new-instance v2, Landroid/os/storage/StorageVolume;
 
     new-instance v3, Ljava/io/File;
 
-    move-object/from16 v0, v23
+    move-object/from16 v0, v25
 
     invoke-direct {v3, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -4014,9 +4094,9 @@
 
     move-result-object v12
 
-    const-string v27, "unmounted"
+    const-string v30, "unmounted"
 
-    move-object/from16 v0, v27
+    move-object/from16 v0, v30
 
     invoke-virtual {v3, v12, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4041,31 +4121,31 @@
     .end local v13    # "a":Landroid/content/res/TypedArray;
     .end local v15    # "description":Ljava/lang/CharSequence;
     .end local v17    # "element":Ljava/lang/String;
-    .end local v23    # "path":Ljava/lang/String;
+    .end local v25    # "path":Ljava/lang/String;
     .restart local v18    # "i$":Ljava/util/Iterator;
-    .restart local v20    # "index":I
-    :cond_a
-    invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->close()V
+    .restart local v21    # "index":I
+    :cond_d
+    invoke-interface/range {v24 .. v24}, Landroid/content/res/XmlResourceParser;->close()V
 
     throw v3
 
     .restart local v17    # "element":Ljava/lang/String;
-    :cond_b
-    invoke-interface/range {v22 .. v22}, Landroid/content/res/XmlResourceParser;->close()V
+    :cond_e
+    invoke-interface/range {v24 .. v24}, Landroid/content/res/XmlResourceParser;->close()V
 
     return-void
 
     .end local v17    # "element":Ljava/lang/String;
     .end local v18    # "i$":Ljava/util/Iterator;
-    .end local v20    # "index":I
-    :cond_c
-    const/16 v20, 0x0
+    .end local v21    # "index":I
+    :cond_f
+    const/16 v21, 0x0
 
     goto :goto_4
 
     .restart local v17    # "element":Ljava/lang/String;
-    :cond_d
-    const/16 v20, 0x0
+    :cond_10
+    const/16 v21, 0x0
 
     goto/16 :goto_1
 .end method
