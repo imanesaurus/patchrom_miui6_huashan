@@ -1,0 +1,18 @@
+--- a/MiuiHome/res/layout/launcher.xml
++++ b/MiuiHome/res/layout/launcher.xml
+@@ -4,7 +4,7 @@
+   xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher">
+     <com.miui.home.launcher.Background android:id="@id/drag_layer_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+     <FrameLayout android:id="@id/screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
+-        <FrameLayout android:id="@id/screen_content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
++        <FrameLayout android:id="@id/screen_content" android:clipChildren="false" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|top|center">
+             <com.miui.home.launcher.Workspace android:id="@id/workspace" android:paddingTop="@dimen/status_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+             <com.miui.home.launcher.WorkspaceThumbnailView android:id="@id/workspace_preview" android:paddingTop="@dimen/status_bar_height" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+             <com.miui.home.launcher.EditingEntryThumbnailView android:layout_gravity="bottom" android:id="@id/editing_entry_view" android:paddingTop="24.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/editing_panel_height" />
+@@ -22,4 +22,4 @@
+     <FrameLayout android:paddingTop="@dimen/status_bar_height" android:layout_width="1.0px" android:layout_height="fill_parent">
+         <FrameLayout android:id="@id/default_position" android:layout_width="1.0px" android:layout_height="fill_parent" />
+     </FrameLayout>
+-</com.miui.home.launcher.DragLayer>
+\ No newline at end of file
++</com.miui.home.launcher.DragLayer>

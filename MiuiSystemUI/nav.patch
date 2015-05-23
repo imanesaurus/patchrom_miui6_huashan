@@ -1,0 +1,10 @@
+--- a/MiuiSystemUI/res/values/drawables.xml
++++ b/MiuiSystemUI/res/values/drawables.xml
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+-    <item type="drawable" name="status_bar_background">#ff000000</item>
++    <item type="drawable" name="status_bar_background">#00000000</item>
+     <item type="drawable" name="notification_item_background_color">@android.miui:drawable/android_notification_item_background_color</item>
+     <item type="drawable" name="notification_item_background_color_pressed">@android.miui:drawable/android_notification_item_background_color_pressed</item>
+     <item type="drawable" name="notification_template_icon_bg">@android.miui:drawable/android_notification_template_icon_bg</item>
