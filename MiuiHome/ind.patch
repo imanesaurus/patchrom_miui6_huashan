@@ -1,0 +1,11 @@
+--- a/MiuiHome/res/values/dimens.xml
++++ b/MiuiHome/res/values/dimens.xml
+@@ -48,7 +48,7 @@
+     <dimen name="folder_bottom_padding">60.0dip</dimen>
+     <dimen name="folder_preview_item_padding">1.0dip</dimen>
+     <dimen name="folder_content_edit_mode_height">310.0dip</dimen>
+-    <dimen name="workspace_indicator_margin_bottom">100.0dip</dimen>
++    <dimen name="workspace_indicator_margin_bottom">85.0dip</dimen>
+     <dimen name="icon_padding_top">4.0dip</dimen>
+     <dimen name="workspace_cell_padding_side_rotatable">55.0dip</dimen>
+     <dimen name="workspace_cell_padding_bottom_land">0.0dip</dimen>
