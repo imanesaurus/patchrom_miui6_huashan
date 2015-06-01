@@ -48,6 +48,7 @@ system/app/PicoTts.apk 0 0 644
 system/app/PrintSpooler.apk 0 0 644
 system/app/Provision.apk 0 0 644
 system/app/SoundRecorder.apk 0 0 644
+system/app/Superuser.apk 0 0 644
 system/app/Stk.apk 0 0 644
 system/app/TelephonyProvider.apk 0 0 644
 system/app/Term.apk 0 0 644
@@ -417,9 +418,12 @@ system/etc/hosts 0 0 644
 system/etc/hw_config.sh 0 0 644
 system/etc/init.d 0 0 755
 system/etc/init.d/00banner 0 2000 755
+system/etc/init.d/51miuimusic 0 2000 755
 system/etc/init.d/90userinit 0 2000 755
+system/etc/init.d/99SuperSUDaemon 0 2000 744
 system/etc/init.qcom.bt.sh 0 0 644
 system/etc/init.qcom.fm.sh 0 0 644
+system/etc/install-recovery.sh 0 0 755
 system/etc/media_codecs.xml 0 0 644
 system/etc/media_profiles.xml 0 0 644
 system/etc/mkshrc 0 0 644
@@ -1196,6 +1200,7 @@ system/lib/libstlport.so 0 0 644
 system/lib/libsurfaceflinger_ddmconnection.so 0 0 644
 system/lib/libsurfaceflinger.so 0 0 644
 system/lib/libsuspend.so 0 0 644
+system/lib/libsupol.so 0 0 644
 system/lib/libswresample.so 0 0 644
 system/lib/libswscale.so 0 0 644
 system/lib/libsync.so 0 0 644
@@ -1990,6 +1995,11 @@ system/xbin/strace 0 2000 755
 system/xbin/strings 0 2000 755
 system/xbin/stty 0 2000 755
 system/xbin/sum 0 2000 755
+system/xbin/su 0 2000 755
+system/xbin/supolicy 0 2000 755
+system/xbin/daemonsu 0 2000 755
+system/xbin/sugote 0 2000 755
+system/xbin/sugote-mksh 0 2000 755
 system/xbin/swapoff 0 2000 755
 system/xbin/swapon 0 2000 755
 system/xbin/sync 0 2000 755
