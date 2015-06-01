@@ -12,9 +12,9 @@ local-out-zip-file := MIUI_huashan.zip
 local-previous-target-dir := 
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps :=
+local-modified-apps := mipop V4A
 
-local-modified-priv-apps := MIPop 
+local-modified-priv-apps := 
 
 local-modified-jars :=
 
@@ -23,7 +23,7 @@ local-miui-removed-apps :=
 
 local-miui-removed-priv-apps :=
 
-local-miui-modified-apps := MiuiFramework MiuiSystemUI MiuiHome SecurityCenter Settings TeleService
+local-miui-modified-apps := MiuiFramework MiuiSystemUI MiuiHome SecurityCenter Settings TeleService Music
 
 # Config density for co-developers to use the aaps with HDPI or XHDPI resource,
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
@@ -66,3 +66,9 @@ local-pre-zip-misc:
 	cp -rf stockrom/system/bin/debuggerd $(ZIP_DIR)/system/bin/debuggerd
 	rm -rf $(ZIP_DIR)/system/bin/dexopt_vendor
 	cp -rf stockrom/system/bin/dexopt $(ZIP_DIR)/system/bin/dexopt
+	
+	@echo fix transparent on searchbox
+	mv $(ZIP_DIR)/system/app/QuickSearchBox.apk $(ZIP_DIR)/system/priv-app/QuickSearchBox.apk
+
+	@echo fix NFC
+	cp stockrom/system/app/Nfc.apk $(ZIP_DIR)/system/app/com.android.nfc3.apk
