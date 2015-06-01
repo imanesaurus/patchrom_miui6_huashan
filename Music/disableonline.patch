@@ -1,0 +1,18 @@
+--- a/Music/res/values/bools.xml
++++ b/Music/res/values/bools.xml
+@@ -2,11 +2,11 @@
+ <resources>
+     <bool name="need_change_data_source">true</bool>
+     <bool name="support_icon_panel_spectrum_visualizer">true</bool>
+-    <bool name="is_phone">false</bool>
++    <bool name="is_phone">true</bool>
+     <bool name="is_pad">false</bool>
+-    <bool name="is_dirac_supported">true</bool>
++    <bool name="is_dirac_supported">false</bool>
+     <bool name="priority_storage">true</bool>
+     <bool name="enable_online_music">true</bool>
+-    <bool name="enable_ktv_mode">true</bool>
+-    <bool name="enable_cloud_sync">true</bool>
++    <bool name="enable_ktv_mode">false</bool>
++    <bool name="enable_cloud_sync">false</bool>
+ </resources>

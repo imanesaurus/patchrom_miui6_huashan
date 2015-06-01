@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.vipercn.viper4android_v2" platformBuildVersionCode="15" platformBuildVersionName="4.0.4-1406430">
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <application android:theme="@miui:style/Theme.Light.Settings" android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:persistent="true">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".activity.ViPER4Android" android:screenOrientation="nosensor" android:theme="@miui:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+				<action android:name="com.android.settings.VIPER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name=".service.ViPER4AndroidService"/>
+        <receiver android:name=".receiver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

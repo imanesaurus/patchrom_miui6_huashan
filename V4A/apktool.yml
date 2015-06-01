@@ -1,0 +1,16 @@
+version: 2.0.0-RC4
+apkFileName: V4A.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 8
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '2340'
+  versionName: 2.3.4.0
+compressionType: false
