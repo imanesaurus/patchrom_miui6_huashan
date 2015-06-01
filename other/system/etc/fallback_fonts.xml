@@ -31,16 +31,6 @@
 <familyset>
     <family>
         <fileset>
-            <file>AndroidEmoji.ttf</file>
-        </fileset>
-    </family>
-    <family>
-        <fileset>
-            <file>NotoColorEmoji.ttf</file>
-        </fileset>
-    </family>
-    <family>
-        <fileset>
             <file variant="elegant">DroidNaskh-Regular.ttf</file>
         </fileset>
     </family>
@@ -80,12 +70,6 @@
     <family>
         <fileset>
             <file>DroidSansGeorgian.ttf</file>
-        </fileset>
-    </family>
-    <family>
-        <fileset>
-            <file>LBhashitaComplexSans-Regular.ttf</file>
-            <file>LBhashitaComplexSans-Bold.ttf</file>
         </fileset>
     </family>
     <family>
@@ -198,6 +182,16 @@
     <family>
         <fileset>
             <file>NotoSansSymbols-Regular.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>AndroidEmoji.ttf</file>
+        </fileset>
+    </family>
+    <family>
+        <fileset>
+            <file>NotoColorEmoji.ttf</file>
         </fileset>
     </family>
     <family>
