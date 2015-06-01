@@ -1,0 +1,37 @@
+From 3281b5744fcf2319b920b8b743f561b984b548e0 Mon Sep 17 00:00:00 2001
+From: X-s <xsmumu@gmail.com>
+Date: Mon, 27 Apr 2015 11:55:24 +0800
+Subject: [PATCH] fix camera icon
+
+---
+ MiuiFramework/smali/miui/content/res/IconCustomizer.smali | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+--- a/MiuiFramework/smali/miui/content/res/IconCustomizer.smali
++++ b/MiuiFramework/smali/miui/content/res/IconCustomizer.smali
+@@ -217,6 +217,22 @@
+ 
+     sget-object v0, Lmiui/content/res/IconCustomizer;->sIconMapping:Ljava/util/Map;
+ 
++    const-string v1, "com.cyngn.cameranext.png"
++
++    const-string v2, "com.android.camera.png"
++
++    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
++
++    sget-object v0, Lmiui/content/res/IconCustomizer;->sIconMapping:Ljava/util/Map;
++
++    const-string v1, "cn.nubia.camera.png"
++
++    const-string v2, "com.android.camera.png"
++
++    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
++
++    sget-object v0, Lmiui/content/res/IconCustomizer;->sIconMapping:Ljava/util/Map;
++
+     const-string v1, "com.htc.album.png"
+ 
+     const-string v2, "com.miui.gallery.png"
+-- 
+1.9.1
+

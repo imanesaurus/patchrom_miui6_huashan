@@ -6,12 +6,18 @@
     <bool name="is_xiaomi">false</bool>
     <!--whether the device is hongmi-->
     <bool name="is_hongmi">false</bool>
-    <!--whether install the fm app-->
-    <bool name="support_fm">true</bool>
-    <!--whether the device supports power mode-->
-    <bool name="support_power_mode">true</bool>
+    <!--whether the device supports oldman mode-->
+    <bool name="support_oldman_mode">false</bool>
+    <!--whether the device is dual sim card-->
+    <bool name="support_dual_sim_card">false</bool>
+    <!-- whether the device has dual systems-->
+    <bool name="is_dual_system">false</bool>
+    <!-- whether the device has dual sd card-->
+    <bool name="support_dual_sd_card">false</bool>
     <!--whether the device supports led light-->
     <bool name="support_led_light">true</bool>
+    <!--whether the device supports button light-->
+    <bool name="support_button_light">true</bool>
     <!--whether the device supports emulated storage-->
     <bool name="support_emulated_storage">true</bool>
     <!--whether the device supports internal sdcard-->
