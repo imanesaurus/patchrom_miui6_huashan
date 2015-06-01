@@ -7,8 +7,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>
         <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>		
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:fitsSystemWindows">true</item>
         <item name="android:clipToPadding">false</item>
