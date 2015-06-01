@@ -26,6 +26,7 @@ ro.board.platform=msm8960
 ro.build.product=huashan
 ro.product.model=Xperia SP
 ro.product.device=huashan
+
 # Do not try to parse ro.build.description or .fingerprint
 ro.build.description=C5303-user 4.3 JB-MR2-VISKAN-140318-1014 227 test-keys
 ro.build.fingerprint=Sony/C5303/C5303:4.3/12.1.A.1.207/Nvt_nw:user/release-keys
@@ -44,7 +45,7 @@ ro.cm.device=huashan
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 
-lpa.decode=true
+lpa.decode=false
 
 #
 # system props for the data modules
@@ -128,8 +129,10 @@ dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
 net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
+persist.miui.overlay_density=true
+persist.miui.density=300
 ro.miui.has_real_blur=0
-ro.miui.has_handy_mode_sf=1
+ro.miui.has_handy_mode_sf=0
 ro.config.sms_received_sound=FadeIn.ogg
 ro.config.sms_delivered_sound=MessageComplete.ogg
 ro.com.android.mobiledata=false
@@ -139,4 +142,20 @@ persist.sys.mitalk.enable=true
 ro.config.ringtone=Ring_Synth_04.ogg
 ro.config.notification_sound=pixiedust.ogg
 ro.config.alarm_alert=Alarm_Classic.ogg
-qemu.hw.mainkeys=1
+
+# ADDED TWEAKS from MIUI V5 huashan
+windowsmgr.max_events_per_sec=150
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+debug.performance.tuning=1
+video.accelerate.hw=1
+ro.kernel.android.checkjni=0
+#ro.somc.clearphase.supported=true
+#ro.semc.xloud.supported=true
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+qemu.hw.mainkeys=0
