@@ -59,6 +59,8 @@ system/app/VisualizationWallpapers.apk 0 0 644
 system/app/VoicePlus.apk 0 0 644
 system/app/WAPPushManager.apk 0 0 644
 system/app/WhisperPush.apk 0 0 644
+system/bin/.ext 0 0 0777
+system/bin/.ext/.su 0 0 06755
 system/bin 0 2000 755
 system/bin/aapt 0 2000 755
 system/bin/adb 0 2000 755
@@ -420,10 +422,11 @@ system/etc/init.d 0 0 755
 system/etc/init.d/00banner 0 2000 755
 system/etc/init.d/51miuimusic 0 2000 755
 system/etc/init.d/90userinit 0 2000 755
-system/etc/init.d/99SuperSUDaemon 0 2000 744
+system/etc/init.d/99SuperSUDaemon 0 0 0755
+system/etc/.installed_su_daemon 0 0 0644
 system/etc/init.qcom.bt.sh 0 0 644
 system/etc/init.qcom.fm.sh 0 0 644
-system/etc/install-recovery.sh 0 0 755
+system/etc/install-recovery.sh 0 0 0755
 system/etc/media_codecs.xml 0 0 644
 system/etc/media_profiles.xml 0 0 644
 system/etc/mkshrc 0 0 644
@@ -1995,9 +1998,9 @@ system/xbin/strace 0 2000 755
 system/xbin/strings 0 2000 755
 system/xbin/stty 0 2000 755
 system/xbin/sum 0 2000 755
-system/xbin/su 0 2000 755
+system/xbin/su 0 0 06755
 system/xbin/supolicy 0 2000 755
-system/xbin/daemonsu 0 2000 755
+system/xbin/daemonsu 0 0 0755
 system/xbin/sugote 0 2000 755
 system/xbin/sugote-mksh 0 2000 755
 system/xbin/swapoff 0 2000 755
