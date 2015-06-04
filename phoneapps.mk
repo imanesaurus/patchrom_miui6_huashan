@@ -6,6 +6,8 @@ private-phone-apps := BasicDreams \
 		BluetoothExt \
 		CertInstaller \
 		DocumentsUI \
+		FM2 \
+		FMRecord \
 		Galaxy4 \
 		HoloSpiralWallpaper \
 		HTMLViewer \
@@ -13,7 +15,6 @@ private-phone-apps := BasicDreams \
 		LiveWallpapers \
 		MagicSmokeWallpapers \
 		NoiseField \
-		Nfc \
 		PacProcessor \
 		PhaseBeam \
 		PhotoTable \
