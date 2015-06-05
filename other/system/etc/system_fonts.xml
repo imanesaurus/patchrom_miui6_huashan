@@ -113,8 +113,8 @@
             <name>miui</name>
         </nameset>
         <fileset>
-            <file>Miui-Regular.ttf</file>
-            <file>Miui-Bold.ttf</file>
+            <file>Roboto-Regular.ttf</file>
+			<file>Roboto-Bold.ttf</file>
         </fileset>
     </family>
 
