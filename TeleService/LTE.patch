@@ -21,7 +21,7 @@ Subject: [PATCH] Open LTE Mi5
  
 --- a/TeleService/smali/com/android/phone/settings/PreferredNetworkTypeListPreference.smali
 +++ b/TeleService/smali/com/android/phone/settings/PreferredNetworkTypeListPreference.smali
-@@ -751,15 +751,15 @@
+@@ -836,15 +836,15 @@
  
      sget-boolean v3, Lmiui/os/Build;->IS_MIFIVE:Z
  
@@ -41,7 +41,7 @@ Subject: [PATCH] Open LTE Mi5
 +    #if-eqz v3, :cond_a
  
      :cond_8
-     const v3, 0x7f050025
+     const v3, 0x7f050026
 -- 
 1.7.9.5
 
