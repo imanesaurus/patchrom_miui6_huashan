@@ -7,19 +7,19 @@
 -    invoke-static {v1, v2}, Lcom/miui/home/launcher/Launcher;->access$3300(Lcom/miui/home/launcher/Launcher;Z)Z
 +    # invoke-static {v1, v2}, Lcom/miui/home/launcher/Launcher;->access$3300(Lcom/miui/home/launcher/Launcher;Z)Z
  
-     .line 2660
+     .line 2662
      return-void
 --- a/MiuiHome/smali/com/miui/home/launcher/Launcher.smali
 +++ b/MiuiHome/smali/com/miui/home/launcher/Launcher.smali
-@@ -9695,9 +9695,9 @@
+@@ -9682,9 +9682,9 @@
      if-eqz v0, :cond_2
  
-     .line 3306
+     .line 3308
 -    invoke-direct {p0, v10}, Lcom/miui/home/launcher/Launcher;->showUpsideEnterOrExitTipIfNeed(Z)Z
 +    #invoke-direct {p0, v10}, Lcom/miui/home/launcher/Launcher;->showUpsideEnterOrExitTipIfNeed(Z)Z
  
 -    move-result v6
 +    #move-result v6
  
-     .line 3307
+     .line 3309
      iget-object v0, p0, Lcom/miui/home/launcher/Launcher;->mDragLayer:Lcom/miui/home/launcher/DragLayer;
