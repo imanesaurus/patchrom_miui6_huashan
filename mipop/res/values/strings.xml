@@ -4,7 +4,7 @@
     <string name="full_screen">底部条</string>
     <string name="mipop_title">Mi-POP</string>
     <string name="mipop_switch_title">Mi-POP</string>
-    <string name="mipop_switch_summary">Mi-POP enabled，the nevigation bar could be replaced</string>
+    <string name="mipop_switch_summary">When Mi-POP is enabled，you will be presented with a navigation alternative</string>
     <string name="mipop_fullscreen_title">Hide the navigation bar</string>
     <string name="mipop_fullscreen_summary">Larger screen area available</string>
     <string name="widgetName">Mi-pop</string>
